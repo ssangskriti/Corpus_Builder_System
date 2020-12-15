@@ -43,6 +43,6 @@ for line in bangla_comments:
     classified[class_name].append(line)
 # print(classified)
 
-# dumping into a csv file
+# dumping into a json file
 with open("classified_comments.json", 'w') as file:
     json.dump(classified, file)
