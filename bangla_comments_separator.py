@@ -6,7 +6,7 @@ import fasttext
 df = pd.read_csv('bkash_comments.csv', sep=';')
 df = df[df['message'].notna()]
 comments = df["message"]
-# print(comments)
+print(comments.head())
 
 # using fasttext pretrained model
 PRETRAINED_MODEL_PATH = 'lid.176.bin'
